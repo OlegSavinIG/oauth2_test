@@ -19,11 +19,11 @@ public class CustomOAuth2UserService extends DefaultOAuth2UserService {
     public OAuth2User loadUser(OAuth2UserRequest userRequest) throws OAuth2AuthenticationException {
         OAuth2User oAuth2User = super.loadUser(userRequest);
         Map<String, Object> attributes = oAuth2User.getAttributes();
-        String email = (String) attributes.get("email");
+        String email = (String) attributes.get("login");
         Set<GrantedAuthority> authorities = createAuthority(email);
 
         return new DefaultOAuth2User(
-                authorities, attributes, "email"
+                authorities, attributes, "login"
         );
     }
     private Set<GrantedAuthority> createAuthority(String email){

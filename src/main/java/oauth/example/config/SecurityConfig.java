@@ -21,7 +21,7 @@ public class SecurityConfig {
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
         http.authorizeHttpRequests(authorize -> authorize
-                        .requestMatchers("/", "/public").permitAll()
+                        .requestMatchers("/", "/public","/favicon.ico").permitAll()
                         .requestMatchers("/user/**").hasRole("USER")
                         .requestMatchers("/admin/**").hasRole("ADMIN")
                         .anyRequest().authenticated()
@@ -32,20 +32,16 @@ public class SecurityConfig {
                         .defaultSuccessUrl("/user")
                 )
                 .logout(logout -> logout
-                        .logoutSuccessUrl("/")
-                        .invalidateHttpSession(true)
-                        .deleteCookies("JSESSIONID")
-                        .addLogoutHandler((request, response, authentication) -> {
-                            String googleLogoutUrl = "https://accounts.google.com/logout";
-                            try {
-                                response.sendRedirect(googleLogoutUrl);
-                            } catch (IOException e) {
-                                throw new RuntimeException(e);
-                            }
+                        .logoutUrl("/logout")
+                        .logoutSuccessHandler((request, response, authentication) -> {
+                            request.getSession().invalidate();
+                            response.sendRedirect("https://github.com/logout");
                         })
+                        .deleteCookies("JSESSIONID")
                 )
                 .exceptionHandling(exception -> exception
-                        .accessDeniedHandler(accessDeniedHandler()));
+                        .accessDeniedHandler(accessDeniedHandler())
+                );
         return http.build();
     }
 

@@ -18,4 +18,9 @@ public class TestController {
     public String adminPanel() {
         return "Admin Panel";
     }
+
+    @GetMapping("/public")
+    public String publicPanel() {
+        return "Public Panel";
+    }
 }

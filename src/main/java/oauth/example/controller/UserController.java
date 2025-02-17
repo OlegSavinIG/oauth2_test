@@ -19,4 +19,12 @@ public class UserController {
         model.addAttribute("email", principal.getAttribute("email"));
         return "user";
     }
+    @GetMapping("/login")
+    public String login() {
+        return "redirect:/oauth2/authorization/github";
+    }
+    @GetMapping("/")
+    public String home() {
+        return "index";
+    }
 }
