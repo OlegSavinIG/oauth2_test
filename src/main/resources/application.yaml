@@ -17,6 +17,11 @@ spring:
             client-secret: ${GOOGLE_CLIENT_SECRET}
             scope: openid, profile, email
             redirect-uri: "{baseUrl}/login/oauth2/code/{registrationId}"
+  thymeleaf:
+    prefix: classpath:/templates/
+    suffix: .html
+    cache: false
+
 server:
   servlet:
     session:

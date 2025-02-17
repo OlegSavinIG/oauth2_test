@@ -46,7 +46,7 @@ public class SecurityConfig {
                         })
                 )
                 .exceptionHandling(exception -> exception
-                        .authenticationEntryPoint(new LoginUrlAuthenticationEntryPoint("/user"))
+                        .authenticationEntryPoint(new LoginUrlAuthenticationEntryPoint("/"))
                         .accessDeniedHandler(accessDeniedHandler()));
         return http.build();
     }
