@@ -4,27 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bf030d59-6d88-4852-95de-c432d3bb07d0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/oauth/example/MyApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/oauth/example/config/SecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/oauth/example/controller/TestController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/oauth/example/controller/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/oauth/example/exception/GlobalExceptionHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/oauth/example/service/CustomOAuth2UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/403.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/auth.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/user.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/oauth/example/OAuth2LoginTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/oauth/example/config/SecurityConfigTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/oauth/example/controller/UserControllerTest.java" afterDir="false" />
+    <list default="true" id="bf030d59-6d88-4852-95de-c432d3bb07d0" name="Changes" comment="first 1">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/general.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,7 +17,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="2t9jgedSspQcm7qnFh6z1rjvGcH" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -58,7 +42,7 @@
       <recent name="C:\Users\oleg2\IdeaProjects\oauth2\src\main\java" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.OAuth2LoginTest">
+  <component name="RunManager" selected="Application.MyApp">
     <configuration name="MyApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="oauth.example.MyApp" />
       <module name="oauth2" />
@@ -134,11 +118,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MyApp" />
         <item itemvalue="JUnit.OAuth2LoginTest" />
         <item itemvalue="JUnit.UserControllerTest" />
         <item itemvalue="JUnit.SecurityConfigTest (1)" />
         <item itemvalue="JUnit.SecurityConfigTest" />
-        <item itemvalue="Application.MyApp" />
       </list>
     </recent_temporary>
   </component>
@@ -151,6 +135,18 @@
       <option name="presentableId" value="Default" />
       <updated>1739771299284</updated>
     </task>
+    <task id="LOCAL-00001" summary="first 1">
+      <created>1739771685270</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1739771685270</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="first 1" />
+    <option name="LAST_COMMIT_MESSAGE" value="first 1" />
   </component>
 </project>
