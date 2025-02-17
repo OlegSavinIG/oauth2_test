@@ -21,6 +21,7 @@ public class CustomOAuth2UserService extends DefaultOAuth2UserService {
         Map<String, Object> attributes = oAuth2User.getAttributes();
         String email = (String) attributes.get("email");
         Set<GrantedAuthority> authorities = createAuthority(email);
+
         return new DefaultOAuth2User(
                 authorities, attributes, "email"
         );

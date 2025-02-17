@@ -27,7 +27,6 @@ public class SecurityConfig {
                         .anyRequest().authenticated()
                 )
                 .oauth2Login(oauth2 -> oauth2
-                        .loginPage("/")
                         .userInfoEndpoint(userInfo -> userInfo
                                 .userService(customOAuth2UserService))
                         .defaultSuccessUrl("/user")
@@ -46,7 +45,6 @@ public class SecurityConfig {
                         })
                 )
                 .exceptionHandling(exception -> exception
-                        .authenticationEntryPoint(new LoginUrlAuthenticationEntryPoint("/"))
                         .accessDeniedHandler(accessDeniedHandler()));
         return http.build();
     }
